@@ -52,7 +52,7 @@ export function Home() {
 
       <SkillsSection id='skills'>
         <h2>Skills</h2>
-        
+       
         <SkillsGrid />
         
       </SkillsSection>

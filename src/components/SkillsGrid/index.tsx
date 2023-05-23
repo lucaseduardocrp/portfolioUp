@@ -1,5 +1,6 @@
+import { Champions } from '../Champions';
 import { Skills } from '../Skills';
-import { Container, Line } from './styles';
+import { Container } from './styles';
 
 export function SkillsGrid() {
   return (
@@ -7,7 +8,7 @@ export function SkillsGrid() {
        <div className="leftContent">
           <h3>as tecnologias mais utilizadas no mercado de desenvolvimento web para impulsionar <br /> o desempenho, SEO e a usabilidade dos seus sites</h3>
          
-         <div className="techGrid">
+          <div className="techGrid">
             <Skills name='HTML' src='/html.svg' />
             <Skills name='CSS' src='/css.svg' />
             <Skills name='JAVASCRIPT' src='/javascript.svg' />
@@ -20,13 +21,9 @@ export function SkillsGrid() {
             <Skills name='TAILWIND' src='/tailwindcss.svg' />
             <Skills name='CSS-IN-JS' src='/styled-components.svg' />
             <Skills name='FIGMA' src='/figma.svg' />
-            
-            <Line />
           </div>
-       </div>
-        <div className="elipseAnimated">
-          <img src="/Champion.png" />
         </div>
+        <Champions />  
     </Container>
   );
 }

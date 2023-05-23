@@ -143,9 +143,8 @@ export const AboutSection = styled.section`
 
 
 export const SkillsSection = styled.section`
-  height: 100vh;
-  padding: 6rem 4%;
-  
+  position: relative;
+
   h2{
     text-align: center;
     font-size: var(--xl-font);
