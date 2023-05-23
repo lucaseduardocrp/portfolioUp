@@ -30,7 +30,7 @@ export default createGlobalStyle`
   section{
     width: 100%;
     height: auto;
-    padding: 8rem 8% 14rem;
+    padding: 14rem 8% 14rem;
   }
 
   span{
@@ -51,7 +51,7 @@ export default createGlobalStyle`
     --dark-200: #09090b;
     --dark-400: #101013;
     --black: #000000;
-
+    --xl-font: 8rem;
     --h1-font: 5rem;
     --h2-font: 4rem;
     --h3-font: 2rem;

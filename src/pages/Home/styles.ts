@@ -140,3 +140,17 @@ export const AboutSection = styled.section`
       }
     }
 `;
+
+
+export const SkillsSection = styled.section`
+  height: 100vh;
+  padding: 6rem 4%;
+  
+  h2{
+    text-align: center;
+    font-size: var(--xl-font);
+    color: var(--primary);
+    letter-spacing: 1px;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+`;

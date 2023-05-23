@@ -1,6 +1,7 @@
 import { Btn } from '../../components/Btn';
+import { SkillsGrid } from '../../components/SkillsGrid';
 import { GithubIcon, InstagramIcon, LinkedinIcon, SocialMediaBox, WhatsappIcon } from '../../components/SocialMediaBox';
-import { Main, HomeText, AboutSection } from './styles';
+import { Main, HomeText, AboutSection, SkillsSection } from './styles';
 
 export function Home() {
   return (
@@ -24,7 +25,7 @@ export function Home() {
         </div>
       </section>
 
-      <AboutSection data-aos="fade-down" data-aos-duration="1200">
+      <AboutSection id='about' data-aos="fade-down" data-aos-duration="1200">
           <div className="about-container">
             <div className="about-img">
                 <img src="/about-img-formal.png" />
@@ -40,14 +41,21 @@ export function Home() {
               </p>
 
               <div className="socialMedia">
-                <SocialMediaBox href=''><LinkedinIcon /></SocialMediaBox>
-                <SocialMediaBox href=''><GithubIcon /></SocialMediaBox>
-                <SocialMediaBox href=''><WhatsappIcon /></SocialMediaBox>
-                <SocialMediaBox href=''><InstagramIcon /></SocialMediaBox>
+                <SocialMediaBox href='https://www.linkedin.com/in/lucaseccarvalho/'><LinkedinIcon /></SocialMediaBox>
+                <SocialMediaBox href='https://github.com/lucaseduardocrp'><GithubIcon /></SocialMediaBox>
+                <SocialMediaBox href='https://api.whatsapp.com/send/?phone=5521985970787&text&type=phone_number&app_absent=0'><WhatsappIcon /></SocialMediaBox>
+                <SocialMediaBox href='https://www.instagram.com/lucaseduardo_crp/'><InstagramIcon /></SocialMediaBox>
               </div>
             </div>
           </div>
       </AboutSection>
+
+      <SkillsSection id='skills'>
+        <h2>Skills</h2>
+        
+        <SkillsGrid />
+        
+      </SkillsSection>
 
     </Main>
   );
