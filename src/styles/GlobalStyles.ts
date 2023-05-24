@@ -30,7 +30,7 @@ export default createGlobalStyle`
   section{
     width: 100%;
     height: auto;
-    padding: 14rem 6% 14rem;
+    padding: 14rem 4% 14rem;
   }
 
   span{

@@ -4,7 +4,7 @@ import { flexCSS } from '../../styles/GlobalStyles';
 export const HeaderContainer = styled.header`
   position: fixed;
   width: 100%;
-  padding: 0 6% 0;
+  padding: 0 4% 0;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -55,8 +55,6 @@ export const HeaderContainer = styled.header`
   }
 
   @media (max-width: 800px) {
-    padding: 0 4%;
-
     nav{
       .navlinks li{
         margin-left: 0;

@@ -49,4 +49,9 @@ export const Container = styled.div`
     object-fit: contain;
     z-index: 10;
   }
+
+  @media (max-width: 768px) {
+    width: 45rem;
+    height: 45rem;
+  }
 `;

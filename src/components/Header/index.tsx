@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { LightIcon, MobileMenu } from '../Icons';
+import { DarkIcon,  MobileMenu } from '../Icons';
 import { HeaderContainer } from './styles';
 
 export const Header = () => {
@@ -39,7 +39,7 @@ export const Header = () => {
           <li><a href="#service" data-text="Serviços">Serviços</a></li>
           <li><a href="#projects" data-text="Projetos">Projetos</a></li>
           <li><a href="#contact" data-text="Contatos">Contatos</a></li>
-          <li><LightIcon /></li>
+          <li><DarkIcon /></li>
         </ul>
       </nav>
     </HeaderContainer>
