@@ -1,9 +1,12 @@
+import { useSkillContext } from '../Context/context';
 import { Container } from './styles';
 
 export function Champions() {
+  const {skillImage} = useSkillContext();
+
   return (
     <Container>
-      <img src="/Champion.png" />
+      <img src={skillImage.championsImage} alt={skillImage.techName}/>
     </Container>
   );
 }

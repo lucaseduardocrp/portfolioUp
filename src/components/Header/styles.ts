@@ -8,8 +8,7 @@ export const HeaderContainer = styled.header`
   top: 0;
   left: 0;
   z-index: 1000;
-  background: transparent;
-  backdrop-filter: blur(20px);
+  background: var(--white);
 
   nav{
     display: flex;
@@ -23,24 +22,25 @@ export const HeaderContainer = styled.header`
 
     .navlinks{
       ${flexCSS}
-
+      
+      
       li{
         margin-left: 3rem;
         
-          a{
-            position: relative;
-            font-size: var(--p-font);
-            font-weight: 700;
-            color: var(--black);
-    
-            &::before{
+        a{
+          position: relative;
+          font-size: var(--p-font);
+          font-weight: 700;
+          color: var(--black);
+          
+          &::before{
               content: attr(data-text);
               position: absolute;
               width: 0;
               overflow: hidden;
               transition: all .30s ease;
             }
-    
+            
             &:hover::before{
               width: 100%;
               color: var(--primary);
@@ -48,19 +48,19 @@ export const HeaderContainer = styled.header`
           }
         }
       }
-
-    .burgerMenu{
-      display: none;
-    }
-  }
-
-  @media (max-width: 800px) {
-    nav{
-      .navlinks li{
-        margin-left: 0;
-      }
       
-      .Open{
+      .burgerMenu{
+        display: none;
+      }
+    }
+    
+    @media (max-width: 800px) {
+      nav{
+        .navlinks li{
+          margin-left: 0;
+        }
+        
+        .Open{
       width: 100%;
       height: 45vh;
       line-height: 3;

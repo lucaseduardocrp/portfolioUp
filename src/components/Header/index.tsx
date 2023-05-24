@@ -8,15 +8,15 @@ export const Header = () => {
   const toggleMode = () => {
     setMode(!active)
   }
-
+  
   // Burger Close with Scroll
   useEffect(() => {
     const handleScroll = () => {
       setMode(false);
     };
-
+  
     window.addEventListener('scroll', handleScroll);
-
+  
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };

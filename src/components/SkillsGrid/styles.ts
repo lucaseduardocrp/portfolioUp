@@ -12,13 +12,14 @@ export const Container = styled.div`
       font-size: var(--h3-font);
       letter-spacing: 1px;
       font-family: 'Bebas Neue', sans-serif;
-      margin: 8rem 0 13rem 0;
+      margin: 10rem 0 10rem 0;
     }
 
     .techGrid{
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
       gap: 2rem;
+      place-items: center;
     }
   }
 

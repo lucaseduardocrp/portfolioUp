@@ -39,17 +39,18 @@ const Container = styled.div`
 interface Props{
   name: string;
   src: string;
+  onClick: React.MouseEventHandler;
 }
 
-export const Skills = ({name, src}: Props) => {
+export const Skills = ({name, src, onClick}: Props) => {
   return(
     <>
-    <Container>
-      <div className="elipse">
-        <img src={src} />
-      </div>
-      <p>{name}</p>
-    </Container>
+      <Container onClick={onClick}>
+        <div className="elipse">
+          <img src={src} />
+        </div>
+        <p>{name}</p>
+      </Container>
     </>
   )
 }

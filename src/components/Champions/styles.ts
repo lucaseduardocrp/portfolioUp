@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   position: relative;
-  width: 60rem;
-  height: 60rem;
+  width: 70rem;
+  height: 70rem;
   background: var(--grey);
   border-radius: 50%;
   overflow: hidden;
@@ -48,6 +48,7 @@ export const Container = styled.div`
     height: 100%;
     object-fit: contain;
     z-index: 10;
+    overflow: hidden;
   }
 
   @media (max-width: 768px) {

@@ -1,7 +1,9 @@
 import { Btn } from '../../components/Btn';
 import { SkillsGrid } from '../../components/SkillsGrid';
 import { GithubIcon, InstagramIcon, LinkedinIcon, SocialMediaBox, WhatsappIcon } from '../../components/SocialMediaBox';
-import { Main, HomeText, AboutSection, SkillsSection } from './styles';
+import { Main, HomeText, AboutSection, SkillsSection, ServiceSection } from './styles';
+import { ContextProvider }  from '../../components/Context';
+
 
 export function Home() {
   return (
@@ -52,10 +54,17 @@ export function Home() {
 
       <SkillsSection id='skills'>
         <h2>Skills</h2>
-       
-        <SkillsGrid />
-        
+        <ContextProvider>
+          <SkillsGrid />
+        </ContextProvider>
       </SkillsSection>
+
+      <ServiceSection>
+        <div className="main-text">
+          <h2><span>Meus</span> Serviços</h2>
+          <h4>Melhores Websites, <span>Melhores Experiências</span></h4>
+        </div>
+      </ServiceSection>
 
     </Main>
   );

@@ -153,3 +153,7 @@ export const SkillsSection = styled.section`
     font-family: 'Bebas Neue', sans-serif;
   }
 `;
+
+export const ServiceSection = styled.section`
+  
+`;
