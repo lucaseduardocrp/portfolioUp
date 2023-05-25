@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { flexCSS } from "../../../styles/GlobalStyles";
-import { useState } from "react";
 
 const Container = styled.div`
   width: 8rem;
@@ -33,36 +32,26 @@ const Container = styled.div`
 
     &:hover{
     border-color: var(--primary);
-  }
-  
-    &:active{
-    border-color: var(--primary);
-    }
-  }
+  } 
+}
 `;
 
 interface Props{
-  name: string;
-  src: string;
-  alt: string;
+  name: string,
+  src: string,
+  alt: string,
   onClick: React.MouseEventHandler;
 }
 
 export const Skills = ({name, src, alt, onClick}: Props) => {
-  const [active, setActive] = useState(false);
-  const toggle = () => {
-    setActive(active)
-  }
 
   return(
-    <>
-      <Container onClick={onClick}>
-        <div className={toggle ? 'elipse active' : 'elipse'}>
-          <img src={src} alt={alt}/>
-        </div>
-        <p>{name}</p>
-      </Container>
-    </>
+    <Container onClick={onClick}>
+      <div className="elipse">
+        <img src={src} alt={alt}/>
+      </div>
+      <p>{name}</p>
+    </Container>
   )
 }
 

@@ -17,7 +17,7 @@ const Box = styled.a`
   padding: 1.6rem;
   border: 2px solid var(--primary);
   border-radius: 12px;
-  margin: 4.5rem 1.5rem 0 0;
+  margin: 4.5rem 0 0 0;
   font-size: 3.2rem;
   color: var(--white);
   transition: all .30s ease;

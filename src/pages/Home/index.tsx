@@ -3,7 +3,8 @@ import { SkillsGrid } from '../../components/SkillsGrid';
 import { GithubIcon, InstagramIcon, LinkedinIcon, SocialMediaBox, WhatsappIcon } from '../../components/SocialMediaBox';
 import { Main, HomeText, AboutSection, SkillsSection, ServiceSection } from './styles';
 import { ContextProvider }  from '../../components/Context';
-
+import { ServiceInfos } from '../../modules/ServiceInfos';
+import { ServiceCard } from '../../components/ServiceCard';
 
 export function Home() {
   return (
@@ -59,10 +60,14 @@ export function Home() {
         </ContextProvider>
       </SkillsSection>
 
-      <ServiceSection>
+      <ServiceSection id='service'>
         <div className="main-text">
           <h2><span>Meus</span> Serviços</h2>
           <h4>Melhores Websites, <span>Melhores Experiências</span></h4>
+
+          <div className="serviceGrid">
+            {ServiceInfos.map((infos, id) => <ServiceCard src={infos.icon} alt={infos.title} title={infos.title} description={infos.text} key={id} />)}
+          </div>
         </div>
       </ServiceSection>
 

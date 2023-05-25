@@ -79,7 +79,8 @@ export const HomeText = styled.div`
   }
 `;
 
-//About Section
+/*------------ About Section ------------*/
+
 export const AboutSection = styled.section`
   .about-container{
     display: grid;
@@ -136,11 +137,12 @@ export const AboutSection = styled.section`
 
     .socialMedia{
         ${flexCSS}
-        gap: 1rem;
+        gap: 2.5rem;
       }
     }
 `;
 
+/*------------ Skills Section ------------*/
 
 export const SkillsSection = styled.section`
   position: relative;
@@ -154,6 +156,37 @@ export const SkillsSection = styled.section`
   }
 `;
 
+/*------------ Services Section ------------*/
+
 export const ServiceSection = styled.section`
+  text-align: center;
+        
+  h4{
+  font-size: var(--h4-font);
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  }
   
+  h2{
+  margin-top: 1.5rem;
+  font-size: var(--xl-font);
+  letter-spacing: 1px;
+  line-height: 1;
+  font-family: 'Bebas Neue', sans-serif;
+
+  >span{
+    font-family: 'Bebas Neue', sans-serif;
+    }
+  }
+
+  .serviceGrid{
+    ${flexCSS}
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+    margin-top: 8rem;
+  }
 `;
+
+/*------------ Projects Section ------------*/
+

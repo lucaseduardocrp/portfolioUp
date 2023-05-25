@@ -52,6 +52,7 @@ export default createGlobalStyle`
     --dark-400: #101013;
     --black: #000000;
     --xl-font: 8rem;
+    --x-font: 6rem;
     --h1-font: 5rem;
     --h2-font: 4rem;
     --h3-font: 2rem;
@@ -83,6 +84,7 @@ export default createGlobalStyle`
 
   @media (max-width: 1240px){
     :root{
+      --x-font: 4rem;
       --h1-font: 4rem;
       --h2-font: 3.2rem;
       --h3-font: 1.6rem;

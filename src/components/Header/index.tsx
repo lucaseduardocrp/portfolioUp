@@ -23,9 +23,9 @@ export const Header = () => {
   }, []);
 
   return (
-    <HeaderContainer>
+    <HeaderContainer id='header'>
       <nav>
-        <a href="#home"><img src="/LogoName.svg" alt="Logo" /></a>
+        <a href="#header"><img src="/LogoName.svg" alt="Logo" /></a>
 
         <div className="burgerMenu" onClick={toggleMode}>
           <MobileMenu />
