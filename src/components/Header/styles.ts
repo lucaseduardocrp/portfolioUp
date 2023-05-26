@@ -62,8 +62,8 @@ export const HeaderContainer = styled.header`
       
     .Open{
       width: 100%;
-      height: 45vh;
-      line-height: 3;
+      height: 50vh;
+      line-height: 3.4;
       padding: 3rem;
       flex-direction: column;
       position: absolute;
