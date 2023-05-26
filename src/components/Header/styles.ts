@@ -1,5 +1,7 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { flexCSS } from '../../styles/GlobalStyles';
+import { BsMoonFill, BsSunFill } from 'react-icons/bs';
+
 
 export const HeaderContainer = styled.header`
   position: fixed;
@@ -54,13 +56,13 @@ export const HeaderContainer = styled.header`
       }
     }
     
-    @media (max-width: 800px) {
-      nav{
-        .navlinks li{
-          margin-left: 0;
-        }
-        
-        .Open{
+@media (max-width: 800px) {
+  nav{
+    .navlinks li{
+      margin-left: 0;
+    }
+      
+    .Open{
       width: 100%;
       height: 45vh;
       line-height: 3;
@@ -75,10 +77,30 @@ export const HeaderContainer = styled.header`
     .Close{
       display: none;
     }
-  
+
     .burgerMenu{
       display: block;
     }
   }
 }
+`;
+
+const darkModeIcons = css`
+  border-radius: 10px;
+  font-size: 2.6rem;
+  fill: var(--primary);
+  transition: all .30s ease;
+  cursor: pointer;
+  
+  &:hover{
+    transform: scale(1.2);
+  }
+`;
+
+export const DarkIcon = styled(BsMoonFill)`
+  ${darkModeIcons}
+`;
+
+export const LightIcon = styled(BsSunFill)`
+  ${darkModeIcons}
 `;

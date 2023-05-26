@@ -11,14 +11,14 @@ const Container = styled.div`
   
   p{
     font-size: var(--p-font);
-    color: var(--black);
+    color: var(--skillText);
     font-family: 'Bebas Neue', sans-serif;
   }
-
+  
   &:hover{
     transform: scale(1.1);
   }
-
+  
   .elipse{
     ${flexCSS}
     padding: 1.4rem;

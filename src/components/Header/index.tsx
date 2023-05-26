@@ -1,8 +1,22 @@
 import { useEffect, useState } from 'react';
-import { DarkIcon,  MobileMenu } from '../Icons';
-import { HeaderContainer } from './styles';
+import { DarkIcon, HeaderContainer } from './styles';
+import { ThemeName } from '../../styles/themes';
+import { MobileMenu } from '../Icons';
 
-export const Header = () => {
+interface Props {
+  themeName: ThemeName;
+  setThemeName: (newName: ThemeName) => void;
+}
+
+export const Header = ({themeName, setThemeName}: Props) => {
+  //ToggleTheme
+  const [darkMode, setDarkMode] = useState(false)
+  function toggleTheme(){
+    setThemeName(themeName === 'light' ? 'dark' : 'light');
+    setDarkMode(!darkMode)
+  }
+
+  
   //BurgerMenu Open and Close
   const [active, setMode] = useState(false);
   const toggleMode = () => {
@@ -25,7 +39,7 @@ export const Header = () => {
   return (
     <HeaderContainer id='header'>
       <nav>
-        <a href="#header"><img src="/LogoName.svg" alt="Logo" /></a>
+        <a href="#home"><img src="/LogoName.svg" alt="Logo" /></a>
 
         <div className="burgerMenu" onClick={toggleMode}>
           <MobileMenu />
@@ -38,8 +52,7 @@ export const Header = () => {
           <li><a href="#skills" data-text="Skills">Skills</a></li>
           <li><a href="#service" data-text="Serviços">Serviços</a></li>
           <li><a href="#projects" data-text="Projetos">Projetos</a></li>
-          <li><a href="#contact" data-text="Contatos">Contatos</a></li>
-          <li><DarkIcon /></li>
+          <li onClick={toggleTheme} className={darkMode ? 'darkIcon' : 'lighIcon'}><DarkIcon /></li>
         </ul>
       </nav>
     </HeaderContainer>

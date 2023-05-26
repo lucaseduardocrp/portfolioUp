@@ -73,7 +73,7 @@ export function Home() {
         </div>
       </ServiceSection>
 
-      <ProjectSection>
+      <ProjectSection id='projects'>
         <h2>PROJETOS</h2>
 
         <div className="projectGrid">
@@ -88,9 +88,7 @@ export function Home() {
             {infos.techImages.map((language, id) => <img className='languages' src={language} alt={infos.title} key={id} /> )} 
           </Projects>)}
         </div>
-
       </ProjectSection>
-
     </Main>
   );
 }

@@ -24,6 +24,8 @@ export default createGlobalStyle`
   }
 
   body{
+    color: var(--black);
+    background: var(--white);
     padding-top: 4rem;
   }
 
@@ -44,13 +46,17 @@ export default createGlobalStyle`
   }
 
   :root{
-    --primary: #FF3A5E;
-    --white: #ffffff;
-    --grey: #BFBFBF;
-    --dark: #040405;
-    --dark-200: #09090b;
-    --dark-400: #101013;
-    --black: #000000;
+    ${props => {
+      const theme = props.theme;
+
+      let append = '';
+      Object.entries(theme).forEach(([prop, value]) => {
+        append += `--${prop}: ${value};`;
+      });
+
+      return append;
+    }}
+
     --xl-font: 8rem;
     --x-font: 6rem;
     --h1-font: 5rem;

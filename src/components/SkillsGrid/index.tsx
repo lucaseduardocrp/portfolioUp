@@ -1,4 +1,4 @@
-import { Champions } from '../Champions';
+import { Champions } from './Champions';
 import { Skills } from './Skills';
 import { Container } from './styles';
 import { ImagesArray } from '../../modules/ImagesArray';

@@ -4,7 +4,7 @@ const Button = styled.a`
   padding: 1.5rem 3rem;
   font-size: 1.8rem;
   background: var(--primary);
-  color: var(--white);
+  color: var(--btnText);
   border: 2px solid transparent;
   border-radius: 3rem;
   transition: all .35s ease;

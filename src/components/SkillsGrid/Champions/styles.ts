@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { flexCSS } from "../../styles/GlobalStyles";
+import { flexCSS } from "../../../styles/GlobalStyles";
 
 export const Container = styled.div`
   position: relative;
@@ -88,7 +88,7 @@ export const Container = styled.div`
     z-index: 3;
     overflow: hidden;
     border-radius: 50%;
-    background: #fff;
+    background: var(--white);
     transition: all .15s ease;
 
     &:hover{

@@ -82,11 +82,13 @@ export const HomeText = styled.div`
 /*------------ About Section ------------*/
 
 export const AboutSection = styled.section`
+  padding: 14rem 8%;
+
   .about-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    background: var(--white);
-    border: 2px solid var(--primary);
+    background: var(--alternativeBG);
+    border: 2px solid var(--border);
 
     .about-img{
       text-align: center;
@@ -140,6 +142,14 @@ export const AboutSection = styled.section`
         gap: 2.5rem;
       }
     }
+
+    @media (max-width: 800px){
+      padding: 8rem 4% 14rem;
+
+      .about-container .about-text{
+        align-items: center;
+      }
+    }
 `;
 
 /*------------ Skills Section ------------*/
@@ -159,6 +169,7 @@ export const SkillsSection = styled.section`
 /*------------ Services Section ------------*/
 
 export const ServiceSection = styled.section`
+  background: var(--alternativeBG);
   text-align: center;
         
   h4{
@@ -192,7 +203,7 @@ export const ServiceSection = styled.section`
 
 export const ProjectSection = styled.section`
   text-align: center;
-
+  
   h2{
     color: var(--primary);
     font-size: var(--xl-font);
@@ -200,18 +211,23 @@ export const ProjectSection = styled.section`
     margin-bottom: 8rem;
     font-family: 'Bebas Neue', sans-serif;
   }
-
+  
   .projectGrid{
     ${flexCSS}
     flex-wrap: wrap;
     justify-content: center;
     gap: 6rem;
   }
-
+  
   .languages{
     width: 2rem;
     height: 2rem;
     margin-left: 0.6rem;
   }
-`;
+  `;
 
+/*------------ Contact Section ------------*/
+
+export const ContactSection = styled.section`
+  
+`;

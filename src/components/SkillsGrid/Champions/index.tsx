@@ -1,4 +1,4 @@
-import { useSkillContext } from '../Context/context';
+import { useSkillContext } from '../../Context/context';
 import { Container } from './styles';
 
 export function Champions() {

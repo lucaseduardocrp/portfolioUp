@@ -9,7 +9,7 @@ export const FooterContainer = styled.footer`
     flex-wrap: wrap;
     gap: 2rem;
     padding: 2rem 4%;
-    background: var(--white);
+    background: var(--alternativeBG);
 
     color: var(--black);
     font-size: 1.4rem;
@@ -20,7 +20,7 @@ export const Footer = () => {
     <FooterContainer>
       <p>Copyright © 2023 by Lucas Eduardo Crespo de Carvalho All Rights Reserved</p>
 
-      <ArrowTop />
+      <a href="#home"><ArrowTop /></a>
     </FooterContainer>
   )
 }

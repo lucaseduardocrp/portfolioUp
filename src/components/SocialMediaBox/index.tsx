@@ -13,17 +13,17 @@ export const GithubIcon = styled(BsGithub)``;
 
 const Box = styled.a`
   ${flexCSS}
-  background-color: var(--primary);
+  background-color: var(--white);
   padding: 1.6rem;
-  border: 2px solid var(--primary);
+  border: 2px solid var(--grey);
   border-radius: 12px;
   margin: 4.5rem 0 0 0;
   font-size: 3.2rem;
-  color: var(--white);
+  color: var(--primary);
   transition: all .30s ease;
 
   &:hover{
-    background: transparent;
+    border-color: var(--primary);
     color: var(--primary);
   }
 
