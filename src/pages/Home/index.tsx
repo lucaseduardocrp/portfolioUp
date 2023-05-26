@@ -62,7 +62,7 @@ export function Home() {
         </ContextProvider>
       </SkillsSection>
 
-      <ServiceSection id='service'>
+      <ServiceSection id='service' data-aos="fade-down" data-aos-duration="1500">
         <div className="main-text">
           <h2><span>Meus</span> Serviços</h2>
           <h4>Melhores Websites, <span>Melhores Experiências</span></h4>
@@ -73,12 +73,12 @@ export function Home() {
         </div>
       </ServiceSection>
 
-      <ProjectSection id='projects'>
+      <ProjectSection id='projects' data-aos="fade-down" data-aos-duration="1200">
         <h2>PROJETOS</h2>
 
         <div className="projectGrid">
           {ProjectInfos.map((infos, id) => 
-          <Projects 
+          <Projects
             href={infos.link} 
             src={infos.capa} 
             alt={infos.title} 

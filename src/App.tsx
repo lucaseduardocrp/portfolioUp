@@ -7,7 +7,7 @@ import { ThemeProvider } from "styled-components";
 import { ThemeName, themes } from "./styles/themes";
 
 export default function App() {
-  const [themeName, setThemeName] = useState<ThemeName>('light');
+  const [themeName, setThemeName] = useState<ThemeName>('dark');
   const currentTheme = themes[themeName];
 
   return (

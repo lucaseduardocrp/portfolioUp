@@ -35,7 +35,7 @@ interface Props{
 
 export const ServiceCard = ({src, alt, title, description}: Props) => {
   return(
-    <Container>
+    <Container data-aos="flip-left" data-aos-duration="1000">
       <img src={src} alt={alt} />
       <h3>{title}</h3>
       <p>{description}</p>

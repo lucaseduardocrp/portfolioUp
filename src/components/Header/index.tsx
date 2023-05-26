@@ -46,7 +46,7 @@ export const Header = ({themeName, setThemeName}: Props) => {
         </div>
 
 
-        <ul className={active ? 'navlinks Open' : 'navlinks Close'}>
+        <ul className={active ? 'navlinks Open' : 'navlinks Close'} data-aos="fade-left" data-aos-duration="700">
           <li><a href="#home" data-text="Início">Início</a></li>
           <li><a href="#about" data-text="Sobre">Sobre</a></li>
           <li><a href="#skills" data-text="Skills">Skills</a></li>

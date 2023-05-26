@@ -32,7 +32,7 @@ export const HeaderContainer = styled.header`
         a{
           position: relative;
           font-size: var(--p-font);
-          font-weight: 700;
+          font-weight: 500;
           color: var(--black);
           
           &::before{
