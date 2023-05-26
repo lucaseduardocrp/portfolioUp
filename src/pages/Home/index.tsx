@@ -1,10 +1,12 @@
 import { Btn } from '../../components/Btn';
 import { SkillsGrid } from '../../components/SkillsGrid';
 import { GithubIcon, InstagramIcon, LinkedinIcon, SocialMediaBox, WhatsappIcon } from '../../components/SocialMediaBox';
-import { Main, HomeText, AboutSection, SkillsSection, ServiceSection } from './styles';
+import { Main, HomeText, AboutSection, SkillsSection, ServiceSection, ProjectSection } from './styles';
 import { ContextProvider }  from '../../components/Context';
 import { ServiceInfos } from '../../modules/ServiceInfos';
 import { ServiceCard } from '../../components/ServiceCard';
+import { Projects } from '../../components/Projects';
+import { ProjectInfos } from '../../modules/ProjectInfos';
 
 export function Home() {
   return (
@@ -70,6 +72,24 @@ export function Home() {
           </div>
         </div>
       </ServiceSection>
+
+      <ProjectSection>
+        <h2>PROJETOS</h2>
+
+        <div className="projectGrid">
+          {ProjectInfos.map((infos, id) => 
+          <Projects 
+            href={infos.link} 
+            src={infos.capa} 
+            alt={infos.title} 
+            title={infos.title} 
+            key={id} 
+          > 
+            {infos.techImages.map((language, id) => <img className='languages' src={language} alt={infos.title} key={id} /> )} 
+          </Projects>)}
+        </div>
+
+      </ProjectSection>
 
     </Main>
   );

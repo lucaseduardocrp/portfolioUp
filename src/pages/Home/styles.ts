@@ -190,3 +190,28 @@ export const ServiceSection = styled.section`
 
 /*------------ Projects Section ------------*/
 
+export const ProjectSection = styled.section`
+  text-align: center;
+
+  h2{
+    color: var(--primary);
+    font-size: var(--xl-font);
+    letter-spacing: 1px;
+    margin-bottom: 8rem;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+
+  .projectGrid{
+    ${flexCSS}
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6rem;
+  }
+
+  .languages{
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.6rem;
+  }
+`;
+

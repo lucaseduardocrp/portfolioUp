@@ -79,8 +79,8 @@ export const Container = styled.div`
 
   >img{
     position: absolute;
-    width: 95%;
-    height: 90%;
+    width: 98%;
+    height: 98%;
     object-fit: contain;
     top: 50%;
     left: 50%;
