@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-import { DarkIcon, HeaderContainer } from './styles';
+import { HeaderContainer } from './styles';
 import { ThemeName } from '../../styles/themes';
-import { MobileMenu } from '../Icons';
+import { DarkIcon, MobileMenu } from '../Icons';
+import { LightIcon } from '../Icons';
 
 interface Props {
   themeName: ThemeName;
@@ -11,12 +12,11 @@ interface Props {
 export const Header = ({themeName, setThemeName}: Props) => {
   //ToggleTheme
   const [darkMode, setDarkMode] = useState(false)
-  function toggleTheme(){
+  const toggleTheme = () => {
     setThemeName(themeName === 'light' ? 'dark' : 'light');
     setDarkMode(!darkMode)
   }
 
-  
   //BurgerMenu Open and Close
   const [active, setMode] = useState(false);
   const toggleMode = () => {
@@ -37,7 +37,7 @@ export const Header = ({themeName, setThemeName}: Props) => {
   }, []);
 
   return (
-    <HeaderContainer id='header'>
+    <HeaderContainer id='header' data-aos="fade-left" data-aos-duration="700">
       <nav>
         <a href="#home"><img src="/LogoName.svg" alt="Logo" /></a>
 
@@ -46,13 +46,13 @@ export const Header = ({themeName, setThemeName}: Props) => {
         </div>
 
 
-        <ul className={active ? 'navlinks Open' : 'navlinks Close'} data-aos="fade-left" data-aos-duration="700">
+        <ul className={active ? 'navlinks Open' : 'navlinks Close'}>
           <li><a href="#home" data-text="Início">Início</a></li>
           <li><a href="#about" data-text="Sobre">Sobre</a></li>
           <li><a href="#skills" data-text="Skills">Skills</a></li>
           <li><a href="#service" data-text="Serviços">Serviços</a></li>
           <li><a href="#projects" data-text="Projetos">Projetos</a></li>
-          <li onClick={toggleTheme} className={darkMode ? 'darkIcon' : 'lighIcon'}><DarkIcon /></li>
+          <li onClick={toggleTheme}>{darkMode ? <DarkIcon /> : <LightIcon />}</li>
         </ul>
       </nav>
     </HeaderContainer>

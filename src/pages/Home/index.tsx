@@ -22,7 +22,7 @@ export function Home() {
                 <p><span>"A mente que se abre a uma nova ideia, jamais voltará ao seu tamanho original."</span></p>  
             </HomeText>    
             
-            <Btn href='#contact' text='Entre em contato' />
+            <Btn text='Entre em contato' />
         </div>
               
         <div className="homeImage">

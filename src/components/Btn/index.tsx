@@ -16,15 +16,8 @@ const Button = styled.a`
   }
 `;
 
-interface BtnProps {
-  text: string;
-  ClassName?: string;
-  href?: string;
-  target?: string;
-}
-
-export function Btn({text, ClassName, href, target}: BtnProps) {
+export function Btn(props: {text: string}) {
   return (
-    <Button className={ClassName} href={href} target={target}>{text}</Button>
+    <Button href='https://api.whatsapp.com/send/?phone=5521985970787&text&type=phone_number&app_absent=0' target="_blank">{props.text}</Button>
   );
 }
