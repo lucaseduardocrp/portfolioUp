@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { HeaderContainer } from './styles';
 import { ThemeName } from '../../styles/themes';
-import { DarkIcon, MobileMenu } from '../Icons';
+import { CloseMobileMenu, DarkIcon, MobileMenu } from '../Icons';
 import { LightIcon } from '../Icons';
 
 interface Props {
@@ -42,7 +42,7 @@ export const Header = ({themeName, setThemeName}: Props) => {
         <a href="#home"><img src="/LogoName.svg" alt="Logo" /></a>
 
         <div className="burgerMenu" onClick={toggleMode}>
-          <MobileMenu />
+          {active ? <CloseMobileMenu /> : <MobileMenu />}
         </div>
 
 

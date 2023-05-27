@@ -1,11 +1,18 @@
 import styled, { css } from "styled-components";
-import { TfiMenu } from 'react-icons/tfi';
+import { TfiClose, TfiMenu } from 'react-icons/tfi';
 import { AiOutlineArrowUp } from 'react-icons/ai';
 import { BsMoonFill, BsSunFill } from "react-icons/bs";
 
-export const MobileMenu = styled(TfiMenu)`
+const MobileIcons = css`
   font-size: 4rem;
   color: var(--black);
+`;
+
+export const MobileMenu = styled(TfiMenu)`
+  ${MobileIcons}
+`;
+export const CloseMobileMenu = styled(TfiClose)`
+  ${MobileIcons}
 `;
 
 export const ArrowTop = styled(AiOutlineArrowUp)`
