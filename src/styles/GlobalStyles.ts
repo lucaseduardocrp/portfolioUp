@@ -100,6 +100,9 @@ export default createGlobalStyle`
   }
 
   @media (max-width: 800px){
+    :root{
+      --sm-font: 1.4rem;
+    }
     section{
       padding: 8rem 4% 14rem;
     }

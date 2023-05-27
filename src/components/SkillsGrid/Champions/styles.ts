@@ -61,7 +61,7 @@ export const Container = styled.div`
     }
 
     p{
-      font-size: var(--p-font);
+      font-size: var(--sm-font);
       line-height: 1.4;
       text-align: center;
     }
