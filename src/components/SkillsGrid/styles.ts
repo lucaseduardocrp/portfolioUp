@@ -26,13 +26,14 @@ export const Container = styled.div`
   @media (max-width: 1240px) {
     .leftContent{
       h3{
-        margin: 5rem 0;
+        margin: 4rem 0;
       }
     }
   }
 
   @media (max-width: 768px) {
     flex-wrap: wrap;
+    justify-content: center;
   }
 `;
 

@@ -96,8 +96,13 @@ export const Container = styled.div`
     }
   }
 
+  @media (max-width: 1440px) {
+    width: 55rem;
+    height: 55rem;
+  }
+
   @media (max-width: 768px) {
-    width: 45rem;
-    height: 45rem;
+    width: 40rem;
+    height: 40rem;
   }
 `;
