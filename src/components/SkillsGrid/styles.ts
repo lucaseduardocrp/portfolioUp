@@ -8,6 +8,8 @@ export const Container = styled.div`
   gap: 2rem;
 
   .leftContent{
+    overflow-x: hidden;
+
     h3{
       font-size: var(--h3-font);
       letter-spacing: 1px;
@@ -20,6 +22,10 @@ export const Container = styled.div`
       grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
       gap: 2rem;
       place-items: center;
+    }
+
+    .carousel{
+      display: none;
     }
   }
 
@@ -34,6 +40,23 @@ export const Container = styled.div`
   @media (max-width: 768px) {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 6rem;
+
+    .leftContent{
+      text-align: center;
+
+      .techGrid{
+        display: none;
+      }
+
+      .carousel{
+        display: block;
+        ${flexCSS}
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+      }
+    }
   }
 `;
 

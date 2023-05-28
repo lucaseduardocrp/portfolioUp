@@ -44,7 +44,6 @@ interface Props{
 }
 
 export const Skills = ({name, src, alt, onClick}: Props) => {
-
   return(
     <Container onClick={onClick} data-aos="flip-left" data-aos-duration='700'>
       <div className="elipse">

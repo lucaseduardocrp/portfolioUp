@@ -3,6 +3,7 @@ import { Skills } from './Skills';
 import { Container } from './styles';
 import { ImagesArray } from '../../modules/ImagesArray';
 import { useSkillContext } from '../Context/context';
+import { Carousel } from './Carousel';
 
 export function SkillsGrid() {
   const {setIndex} = useSkillContext(); 
@@ -25,6 +26,10 @@ export function SkillsGrid() {
               key={index} 
               onClick={() => {toggleHandle(index)}} 
             />)}
+        </div>
+
+        <div className="carousel">
+          <Carousel />
         </div>
       </div>
       
