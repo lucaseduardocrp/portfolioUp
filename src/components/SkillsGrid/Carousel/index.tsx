@@ -33,7 +33,7 @@ export function Carousel() {
 
   useEffect(() => {
     console.log(carouselSlide.current?.scrollWidth, carouselSlide.current?.offsetWidth);
-    setWidth(carouselSlide.current?.scrollWidth - carouselSlide.current?.offsetWidth);
+    setWidth(carouselSlide.current?.scrollWidth - carouselSlide.current?.offsetWidth ?? 0);
   }, [])
 
   return (
