@@ -3,6 +3,7 @@ import { styled } from "styled-components";
 import { flexCSS } from "../../../styles/GlobalStyles";
 import { motion } from "framer-motion";
 import {useState, useEffect, useRef} from "react";
+import { useSkillContext } from "../../Context/context";
 
 const CarouselImages = styled.div`
   width: 100%;
@@ -21,6 +22,12 @@ const CarouselImages = styled.div`
 `;
 
 export function Carousel() {
+  const {setIndex} = useSkillContext(); 
+
+  const toggleHandle = (index: number) => {
+    setIndex(index)
+  }
+
   const carouselSlide = useRef<HTMLDivElement>(null);
   const [width, setWidth] = useState(0);
 
@@ -35,7 +42,12 @@ export function Carousel() {
       dragConstraints={{right: 0, left: -width}}
     >
       <CarouselImages ref={carouselSlide}>
-        {ImagesArray.map((images, id) => <img src={images.techImage} alt="Carousel" key={id} />)}
+        {ImagesArray.map((images, index) => 
+          <img 
+            src={images.techImage} 
+            alt="Carousel" 
+            onClick={() => {toggleHandle(index)}} key={index} 
+          />)}
       </CarouselImages>
     </motion.div>
   );
