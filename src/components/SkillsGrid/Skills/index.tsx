@@ -26,8 +26,8 @@ const Container = styled.div`
     border-radius: 50%;
     
     img{
-      width: 3rem;
-      height: 3rem;
+      width: 4rem;
+      height: 4rem;
     }
 
     &:hover{

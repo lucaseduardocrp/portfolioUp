@@ -8,8 +8,6 @@ export const Container = styled.div`
   gap: 2rem;
 
   .leftContent{
-    overflow-x: hidden;
-
     h3{
       font-size: var(--h3-font);
       letter-spacing: 1px;
@@ -43,6 +41,7 @@ export const Container = styled.div`
     gap: 6rem;
 
     .leftContent{
+      overflow-x: hidden;
       text-align: center;
 
       .techGrid{

@@ -20,7 +20,6 @@ const Container = styled.div`
   }
   
   &:hover{
-    transform: translateY(-1rem);
     box-shadow: 0px 0px 2rem var(--primary);
     border-color: var(--primary);
   }

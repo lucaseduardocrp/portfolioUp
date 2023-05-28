@@ -82,8 +82,6 @@ export const HomeText = styled.div`
 /*------------ About Section ------------*/
 
 export const AboutSection = styled.section`
-  padding: 14rem 8%;
-
   .about-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -95,7 +93,7 @@ export const AboutSection = styled.section`
       margin-top: 2rem;
 
       img{
-        height: 50rem;
+        height: 58rem;
         object-fit: cover;
         margin-right: 2rem;
       }
@@ -144,8 +142,6 @@ export const AboutSection = styled.section`
     }
 
     @media (max-width: 800px){
-      padding: 8rem 4% 14rem;
-
       .about-container .about-text{
         align-items: center;
       }

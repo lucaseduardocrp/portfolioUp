@@ -14,7 +14,7 @@ export const GithubIcon = styled(BsGithub)``;
 const Box = styled.a`
   ${flexCSS}
   background-color: var(--white);
-  padding: 1.6rem;
+  padding: 3rem;
   border: 2px solid var(--grey);
   border-radius: 12px;
   margin: 4.5rem 0 0 0;
@@ -27,8 +27,8 @@ const Box = styled.a`
     color: var(--primary);
   }
 
-  @media (max-width: 800px){
-    padding: 1rem;
+  @media (max-width: 1440px){
+    padding: 1.5rem;
     font-size: 2.4rem;
   }
 `;
