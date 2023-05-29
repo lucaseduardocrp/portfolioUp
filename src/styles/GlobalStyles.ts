@@ -88,6 +88,12 @@ export default createGlobalStyle`
       color: var(--black);
   }
 
+  @media (max-width: 1600px){
+    section{
+      padding: 12rem 6% 12rem;
+    }
+  }
+
   @media (max-width: 1240px){
     :root{
       --x-font: 4rem;

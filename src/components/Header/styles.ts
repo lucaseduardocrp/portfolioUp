@@ -53,6 +53,10 @@ export const HeaderContainer = styled.header`
         display: none;
       }
     }
+
+@media (max-width: 1600px){
+  padding: 0 6% 0;
+}
     
 @media (max-width: 800px) {
   padding: 0 4%;

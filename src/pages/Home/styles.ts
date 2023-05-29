@@ -23,6 +23,12 @@ export const Main = styled.main`
     }
   }
 
+  @media (max-width: 1240px) {
+    .home .homeImage img{
+      width: 40rem;
+    }
+  }
+
   @media (max-width: 1024px) {
     .home{
       display: block;
@@ -34,7 +40,6 @@ export const Main = styled.main`
         margin-top: 0;
       }
     }
-
   }
 `;
 
