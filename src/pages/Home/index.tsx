@@ -9,6 +9,18 @@ import { Projects } from '../../components/Projects';
 import { ProjectInfos } from '../../modules/ProjectInfos';
 
 export function Home() {
+  // typeWrite(document.querySelector(".typewriter") as HTMLElement);
+  
+  // function typeWrite(elemento:HTMLElement) {
+  //     const textoArray = elemento.innerText.split("");
+  //     elemento.innerText = " ";
+  //     textoArray.forEach(function (letra:string, i:number) {
+  //       setTimeout(function () {
+  //         elemento.innerText += letra;
+  //       }, 75 * i);
+  //     });
+  //   }
+
   return (
     <Main>
       <section className="home" id="home">
