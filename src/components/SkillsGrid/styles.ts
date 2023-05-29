@@ -27,7 +27,7 @@ export const Container = styled.div`
     }
   }
 
-  @media (max-width: 1240px) {
+  @media (max-width: 1440px) {
     .leftContent{
       h3{
         margin: 4rem 0;
@@ -35,7 +35,7 @@ export const Container = styled.div`
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     flex-wrap: wrap;
     justify-content: center;
     gap: 6rem;

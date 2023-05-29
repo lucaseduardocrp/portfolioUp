@@ -5,7 +5,7 @@ const Container = styled.div`
   width: 8rem;
   ${flexCSS}
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 1rem;
   transition: all .20s ease;
   cursor: pointer;
   
@@ -26,13 +26,20 @@ const Container = styled.div`
     border-radius: 50%;
     
     img{
-      width: 4rem;
-      height: 4rem;
+      width: 5rem;
+      height: 5rem;
     }
 
     &:hover{
     border-color: var(--primary);
   } 
+}
+
+@media (max-width: 1440px){
+  .elipse img{
+    width: 3rem;
+    height: 3rem;
+  }
 }
 `;
 

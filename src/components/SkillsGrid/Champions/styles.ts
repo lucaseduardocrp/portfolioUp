@@ -3,8 +3,8 @@ import { flexCSS } from "../../../styles/GlobalStyles";
 
 export const Container = styled.div`
   position: relative;
-  width: 70rem;
-  height: 70rem;
+  width: 80rem;
+  height: 80rem;
   background: var(--grey);
   border-radius: 50%;
   overflow: hidden;
@@ -94,6 +94,11 @@ export const Container = styled.div`
     &:hover{
       opacity: 0;
     }
+  }
+
+  @media (max-width: 1980px) {
+    width: 70rem;
+    height: 70rem;
   }
 
   @media (max-width: 1440px) {

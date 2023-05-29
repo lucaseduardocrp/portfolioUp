@@ -55,6 +55,8 @@ export const HeaderContainer = styled.header`
     }
     
 @media (max-width: 800px) {
+  padding: 0 4%;
+
   nav{
     .navlinks li{
       margin-left: 0;

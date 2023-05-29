@@ -13,7 +13,7 @@ export function Projects({href, src, alt, children, title}: ProjectsProps) {
   return (
     <Container>
       <div className="p-img">
-        <a href={href}>
+        <a href={href} target='_blank'>
           <img src={src} alt={alt} />
         </a>
       </div>
