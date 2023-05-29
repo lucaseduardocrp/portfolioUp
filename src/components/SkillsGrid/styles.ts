@@ -49,11 +49,11 @@ export const Container = styled.div`
       }
 
       .carousel{
-        display: block;
         ${flexCSS}
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
+        justify-content: start;
+        padding: 4rem;
+        border-top: 2px solid var(--grey);
+        border-bottom: 2px solid var(--grey);
       }
     }
   }
