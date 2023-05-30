@@ -123,6 +123,7 @@ export const AboutSection = styled.section`
 
     h3{
       font-size: var(--h3-font);
+      letter-spacing: 2px;
 
       span{
         font-family: 'Bebas Neue', sans-serif;
