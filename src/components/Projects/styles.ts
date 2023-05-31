@@ -42,7 +42,7 @@ export const Container = styled.div`
       font-size: var(--p-font);
       word-spacing: 2px;
       margin: 1rem;
-      color: var(--white);
+      color: #fff;
     }
   }
 

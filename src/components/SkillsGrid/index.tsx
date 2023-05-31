@@ -24,7 +24,7 @@ export function SkillsGrid() {
               src={images.techImage} 
               alt={images.techName} 
               key={index} 
-              onClick={() => {toggleHandle(index)}} 
+              onClick={() => {toggleHandle(index)}}
             />)}
         </div>
 

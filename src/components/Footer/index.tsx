@@ -10,6 +10,7 @@ export const FooterContainer = styled.footer`
     gap: 2rem;
     padding: 2rem 4%;
     background: var(--alternativeBG);
+    border-top: 1px solid var(--grey);
 
     color: var(--black);
     font-size: 1.4rem;

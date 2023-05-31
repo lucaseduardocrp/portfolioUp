@@ -16,7 +16,7 @@ export const Main = styled.main`
     }
 
     .homeContainer{
-      margin-top: 8rem;
+      margin-top: 6rem;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
