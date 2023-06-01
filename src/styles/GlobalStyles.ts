@@ -39,11 +39,6 @@ export default createGlobalStyle`
     color: var(--primary);
   }
 
-  *, input{
-    border: 0;
-    background: none;
-  }
-
   :root{
     ${props => {
       const theme = props.theme;
