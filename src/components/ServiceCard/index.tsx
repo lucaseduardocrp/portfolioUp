@@ -22,6 +22,7 @@ const Container = styled.div`
   &:hover{
     box-shadow: 0px 0px 2rem var(--primary);
     border-color: var(--primary);
+    transform: translateY(-8px);
   }
 `;
 
@@ -34,7 +35,7 @@ interface Props{
 
 export const ServiceCard = ({src, alt, title, description}: Props) => {
   return(
-    <Container data-aos="flip-left" data-aos-duration="1000">
+    <Container>
       <img src={src} alt={alt} />
       <h3>{title}</h3>
       <p>{description}</p>
