@@ -17,7 +17,7 @@ export const Container = styled.div`
 
     .techGrid{
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
       gap: 2rem;
       place-items: center;
     }

@@ -47,22 +47,22 @@ export const ImagesArray = [
     championsImage: 'Champion19.png',
     techDescription: 'Sass: É uma extensão da linguagem CSS que adiciona recursos como variáveis, aninhamento de seletores, mixins e importação de arquivos. O Sass ajuda a escrever estilos CSS de forma mais organizada e produtiva.'
   }, 
-  {
-    techImage: '/bootstrap.svg',
-    techName: 'BOOTSTRAP',
-    championsImage: 'Champion20.png',
-    techDescription: 'Bootstrap: É um framework de desenvolvimento web front-end que fornece uma coleção de componentes e estilos predefinidos. Com o Bootstrap, é possível criar rapidamente layouts responsivos e estilizados, com suporte a dispositivos móveis.'
-  }, 
-  {
-    techImage: '/tailwindcss.svg',
-    techName: 'TAILWIND',
-    championsImage: 'Champion21.png',
-    techDescription: 'Tailwind CSS: É um framework CSS utilitário que fornece uma abordagem diferente para a criação de estilos. Em vez de usar classes pré-definidas, o Tailwind CSS oferece uma ampla gama de classes utilitárias que podem ser combinadas para estilizar elementos de forma flexível.'
-  }, 
+  // {
+  //   techImage: '/bootstrap.svg',
+  //   techName: 'BOOTSTRAP',
+  //   championsImage: 'Champion20.png',
+  //   techDescription: 'Bootstrap: É um framework de desenvolvimento web front-end que fornece uma coleção de componentes e estilos predefinidos. Com o Bootstrap, é possível criar rapidamente layouts responsivos e estilizados, com suporte a dispositivos móveis.'
+  // }, 
+  // {
+  //   techImage: '/tailwindcss.svg',
+  //   techName: 'TAILWIND',
+  //   championsImage: 'Champion21.png',
+  //   techDescription: 'Tailwind CSS: É um framework CSS utilitário que fornece uma abordagem diferente para a criação de estilos. Em vez de usar classes pré-definidas, o Tailwind CSS oferece uma ampla gama de classes utilitárias que podem ser combinadas para estilizar elementos de forma flexível.'
+  // }, 
   {
     techImage: '/styled-components.svg',
     techName: 'CSS-IN-JS',
-    championsImage: 'Champion16.png',
+    championsImage: 'Champion21.png',
     techDescription: 'Styled-Components: É uma biblioteca para React que permite escrever estilos CSS em arquivos JavaScript, utilizando a sintaxe de template strings. Com o Styled-Components, é possível criar estilos específicos para componentes React de forma declarativa.'
   }, 
   {
