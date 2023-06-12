@@ -34,7 +34,7 @@ export function Home() {
                 <p><span>"A mente que se abre a uma nova ideia, jamais voltará ao seu tamanho original."</span></p>  
             </HomeText>    
             
-            <Btn text='Entre em contato' />
+            <Btn href='https://api.whatsapp.com/send/?phone=5521985970787&text&type=phone_number&app_absent=0' text='Entre em contato'/>
         </div>
               
         <div className="homeImage">

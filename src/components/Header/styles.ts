@@ -23,28 +23,17 @@ export const HeaderContainer = styled.header`
     .navlinks{
       ${flexCSS}
       
-      
       li{
         margin-left: 3rem;
         
         a{
-          position: relative;
           font-size: var(--p-font);
-          font-weight: 500;
           color: var(--black);
-          
-          &::before{
-              content: attr(data-text);
-              position: absolute;
-              width: 0;
-              overflow: hidden;
-              transition: all .30s ease;
-            }
+          transition: all .30s ease;
             
-            &:hover::before{
-              width: 100%;
-              color: var(--primary);
-            }
+          &:hover{
+            color: var(--primary);
+          }
           }
         }
       }

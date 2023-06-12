@@ -3,7 +3,6 @@ import { HeaderContainer } from './styles';
 import { ThemeName } from '../../styles/themes';
 import { CloseMobileMenu, DarkIcon, MobileMenu } from '../Icons';
 import { LightIcon } from '../Icons';
-
 interface Props {
   themeName: ThemeName;
   setThemeName: (newName: ThemeName) => void;
@@ -47,11 +46,11 @@ export const Header = ({themeName, setThemeName}: Props) => {
 
 
         <ul className={active ? 'navlinks Open' : 'navlinks Close'}>
-          <li><a href="#home" data-text="Início">Início</a></li>
-          <li><a href="#about" data-text="Sobre">Sobre</a></li>
-          <li><a href="#skills" data-text="Skills">Skills</a></li>
-          <li><a href="#service" data-text="Serviços">Serviços</a></li>
-          <li><a href="#projects" data-text="Projetos">Projetos</a></li>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#service">Serviços</a></li>
+          <li><a href="#projects">Projetos</a></li>
           <li onClick={toggleTheme}>{darkMode ? <DarkIcon /> : <LightIcon />}</li>
         </ul>
       </nav>

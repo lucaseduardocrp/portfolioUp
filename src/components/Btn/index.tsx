@@ -1,12 +1,17 @@
 import styled from "styled-components";
 
+type Props = {
+  text: string,
+  href: string
+}
+
 const Button = styled.a`
   padding: 1.5rem 3rem;
   font-size: 1.8rem;
   background: var(--primary);
   color: var(--btnText);
   border: 2px solid transparent;
-  border-radius: 3rem;
+  border-radius: 1rem;
   transition: all .35s ease;
 
   &:hover{
@@ -16,8 +21,8 @@ const Button = styled.a`
   }
 `;
 
-export function Btn(props: {text: string}) {
+export function Btn({href, text}: Props) {
   return (
-    <Button href='https://api.whatsapp.com/send/?phone=5521985970787&text&type=phone_number&app_absent=0' target="_blank">{props.text}</Button>
+    <Button href={href} target="_blank">{text}</Button>
   );
 }

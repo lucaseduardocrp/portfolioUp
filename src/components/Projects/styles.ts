@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { flexCSS } from '../../styles/GlobalStyles';
 
 export const Container = styled.div`
   position: relative;
@@ -50,5 +51,12 @@ export const Container = styled.div`
     display: none;
     visibility: hidden;
     animation: fade 1s;
-  }   
+  }
+  
+  .btnFlex{
+    ${flexCSS}
+    justify-content: center;
+    gap: 1.6rem;
+    margin-bottom: 1rem;
+  }
 `;
